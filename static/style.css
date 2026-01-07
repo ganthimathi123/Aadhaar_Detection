@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #2f3aa8, #070b2d);
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    padding: 24px 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.85;
+    margin-bottom: 50px;
+}
+
+/* Upload Area */
+.upload-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.upload-box {
+    width: 720px;
+    max-width: 95%;
+    padding: 40px 20px;
+    border: 2px dashed rgba(255,255,255,0.4);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #f39c3d;
+    background: rgba(255,255,255,0.08);
+}
+
+.upload-icon {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.upload-text {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.upload-subtext {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* Browse Button */
+.browse-btn {
+    background: linear-gradient(135deg, #e67e22, #f39c3d);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 26px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.browse-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(243,156,61,0.4);
+}
+
+/* Result */
+#result {
+    margin: 25px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Feature Pills */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(255,255,255,0.15);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    backdrop-filter: blur(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+/* Result Box Styling */
+.result {
+    margin-top: 25px;
+    padding: 16px 28px;
+    border-radius: 14px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.result.success {
+    background: rgba(46, 204, 113, 0.2);
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+}
+
+.result.error {
+    background: rgba(231, 76, 60, 0.2);
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>True Aadhaar Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span class="dot"></span>
+        <span>TRUE AADHAAR</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>AI - Powered Aadhaar Detection</h1>
+    <p class="subtitle">
+        Verify, extract data, and ensure authenticity instantly. Secure. Compliant.
+    </p>
+
+    <div class="upload-container">
+        <div class="upload-box" id="dropArea">
+
+            <div class="upload-icon">☁️</div>
+
+            <p class="upload-text">
+                Drag & drop Aadhaar Image here
+            </p>
+
+            <p class="upload-subtext">(JPG / PNG)</p>
+
+            <!-- Browse button INSIDE box -->
+            <button class="browse-btn" onclick="document.getElementById('fileInput').click()">
+                Browse File
+            </button>
+
+            <input type="file" id="fileInput" hidden accept="image/*">
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="features">
+        <div class="feature">📄 OCR Data Extraction</div>
+        <div class="feature">🔳 QR Code Validation</div>
+        <div class="feature">🔍 Forgery Validation</div>
+    </div>
+</section>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
